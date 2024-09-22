@@ -41,13 +41,52 @@
 		</div>
 	</div>
 
+	<div class="profile-container">
+		<div class="profile-header">
+			<img src="https://github.com/Royce-Tinofara/Profile-demo/blob/main/patrick.jpg?raw=true" alt="Profile Picture" class="profile-picture">
+			<h2>Patrick Star</h2>
+		</div>
+		<div class="profile-info">
+			<h3>Subscription Status:</h3>
+			<p>Active (expires on 2023-03-31)</p>
+			<h3>Books Borrowed:</h3>
+			<ul>
+				<li>
+					<img src="https://github.com/Royce-Tinofara/Profile-demo/blob/main/great.jpg?raw=true" alt="Book 1 Cover" class="book-cover">
+					<p>"The Great Gatsby" by F. Scott Fitzgerald</p>
+					<p>Due Date: 2023-03-15</p>
+				</li>
+				<li>
+					<img src="https://github.com/Royce-Tinofara/Profile-demo/blob/main/tokill.jpg?raw=true" alt="Book 2 Cover" class="book-cover">
+					<p>" To Kill a Mockingbird" by Harper Lee</p>
+					<p>Due Date: 2023-03-22</p>
+				</li>
+				<li>
+					<img src="https://github.com/Royce-Tinofara/Profile-demo/blob/main/1984.jpg" alt="Book 3 Cover" class="book-cover">
+					<p>"1984" by George Orwell</p>
+					<p>Due Date: 2023-03-25</p>
+				</li>
+			</ul>
+		</div>
+		<div class="profile-actions">
+			<button id="scan-qr-btn-patrick">Scan QR Code</button>
+			<button id="access-btn-patrick">Access Granted</button>
+		</div>
+	</div>
+
 	<script>
 		// Get the buttons
 		const scanQrBtn = document.getElementById('scan-qr-btn');
 		const accessBtn = document.getElementById('access-btn');
+		const scanQrBtnPatrick = document.getElementById('scan-qr-btn-patrick');
+		const accessBtnPatrick = document.getElementById('access-btn-patrick');
 
 		// Add event listener to scan QR code button
 		scanQrBtn.addEventListener('click', () => {
+			window.location.href = 'https://royce-tinofara.github.io/Qr-code-scanner/';
+		});
+
+		scanQrBtnPatrick.addEventListener('click', () => {
 			window.location.href = 'https://royce-tinofara.github.io/Qr-code-scanner/';
 		});
 
@@ -61,6 +100,11 @@
 				alert('Access granted!');
 			});
 		}
+
+		accessBtnPatrick.addEventListener('click', () => {
+			// Grant access to the user
+			alert('Access granted!');
+		});
 	</script>
 </body>
 </html>
