@@ -35,6 +35,32 @@
 				</li>
 			</ul>
 		</div>
+		<div class="profile-actions">
+			<button id="scan-qr-btn">Scan QR Code</button>
+			<button id="access-btn" disabled>Access Denied</button>
+		</div>
 	</div>
+
+	<script>
+		// Get the buttons
+		const scanQrBtn = document.getElementById('scan-qr-btn');
+		const accessBtn = document.getElementById('access-btn');
+
+		// Add event listener to scan QR code button
+		scanQrBtn.addEventListener('click', () => {
+			window.location.href = 'https://royce-tinofara.github.io/Qr-code-scanner/';
+		});
+
+		// Check if there are overdue books
+		const overdueBooks = document.querySelectorAll('.overdue');
+		if (overdueBooks.length === 0) {
+			accessBtn.disabled = false;
+			accessBtn.textContent = 'Access Granted';
+			accessBtn.addEventListener('click', () => {
+				// Grant access to the user
+				alert('Access granted!');
+			});
+		}
+	</script>
 </body>
 </html>
