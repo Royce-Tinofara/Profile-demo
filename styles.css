@@ -58,3 +58,9 @@ li {
 li:last-child {
   border-bottom: none;
 }
+
+.overdue {
+  background-color: #ff9999;
+  padding: 10px;
+  border-radius: 10px;
+}
