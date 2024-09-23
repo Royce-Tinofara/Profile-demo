@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>View Member</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="book_management.html">Book Management</a>
+        <a href="data_analysis.html">Data Analysis</a>
+        <a href="digital_library.html">Digital Library</a>
+        <a href="membership.html">Memberships</a>
+    </nav>
+    <div class="container">
+        <h2>Member Details</h2>
+        <div class="member-info">
+            <img id="profilePic" src="" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 8px;">
+            <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+            <p><strong>Member ID:</strong> <span id="memberId"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+            <p><strong>Sex:</strong> <span id="sex"></span></p>
+            <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Days Until Deactivation:</strong> <span id="daysUntilDeactivation"></span></p>
+        </div>
+        <h3>Upgrade Membership</h3>
+        <select id="upgradeMonths">
+            <option value="1">1 Month</option>
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">12 Months</option>
+        </select>
+        <button class="btn" id="upgradeBtn">Upgrade Membership</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

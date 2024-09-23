@@ -44,7 +44,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #007bff;
+    background: #007bfffe;
     color: #ffffff;
     position: relative;
     bottom: 0;
@@ -70,4 +70,16 @@ footer {
         display: block;
         margin: 10px 0;
     }
+}
+.membership-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+.member-info {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
 }
