@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Member</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="book_management.html">Book Management</a>
+        <a href="data_analysis.html">Data Analysis</a>
+        <a href="digital_library.html">Digital Library</a>
+        <a href="membership.html">Memberships</a>
+    </nav>
+    <div class="container">
+        <h2>Add New Member</h2>
+        <form>
+            <label for="profilePic">Profile Picture (URL):</label>
+            <input type="text" id="profilePic" placeholder="Image URL" required><br>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required><br>
+
+            <label for="memberId">Member ID:</label>
+            <input type="text" id="memberId" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+
+            <button type="submit" class="btn">Add Member</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
